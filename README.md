@@ -37,13 +37,15 @@ npm run dev
 
 App: http://localhost:3001
 
+If you already have a `.env` from before sign-in landed, add `SESSION_SECRET` to it (any long random string; `.env.example` shows the format). Without it the login session cookie cannot be signed.
+
 Postgres is on port **5434**.
 
 The home page lists whatever the seed put in. It is not the product. When the menu issue starts, that page gets replaced.
 
 ## Logins
 
-Passwords are hashed. Sign-in is not built, so these do nothing until that issue lands. Use these accounts when you build it. Don't add your own users to the seed.
+Passwords are hashed. Sign in at http://localhost:3001/login with one of these accounts. Don't add your own users to the seed.
 
 | who | email | password |
 | --- | --- | --- |
